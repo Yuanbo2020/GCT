@@ -1,1 +1,3 @@
-# GCT
+# The paper is under review.
+
+# GCT is uploding...
