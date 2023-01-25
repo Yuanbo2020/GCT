@@ -1,5 +1,7 @@
 # The paper is under review.
 
+GCT: Gated Contextual Transformer for Sequential Audio Tagging
+
 Arxiv version: https://arxiv.org/pdf/2210.12541.pdf
 
 # GCT is uploding...
