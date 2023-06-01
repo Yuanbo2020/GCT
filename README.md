@@ -12,6 +12,10 @@ target="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset">Se
 
 ## CBGRU-GLU-CTC (GLU-CTC)
 
+## GCT: Gated Contextual Transformer
+
+## Transformer
+
 
 GCT is uploding...
 
