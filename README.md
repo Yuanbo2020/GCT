@@ -5,7 +5,7 @@
 Due to the privacy issues of the Noiseme dataset, we can only release the features and the manual annotations of the Noiseme dataset. The features and the corresponding manually annotated weak and sequential labels can be found <a href="https://github.com/Yuanbo2020/GCT/tree/main/Full_dataset_of_Noiseme" 
 target="https://github.com/Yuanbo2020/GCT/tree/main/Full_dataset_of_Noiseme">here</a>.
 
-For the separate tagged sequential labels of DCASE and Noiseme datasets, please visit the <a href="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset" 
+For the separate files of tagged sequential labels of DCASE and Noiseme datasets, please visit the <a href="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset" 
 target="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset">Sequential_label_dataset</a>.
 
 # Training, inference and evaluate
