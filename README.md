@@ -10,7 +10,45 @@ target="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset">Se
 
 # Training, inference and evaluate
 
-## CBGRU-GLU-CTC (GLU-CTC)
+## CBGRU-GLU-CTC (named GLU-CTC)
+
+### Data preparation
+
+```python
+Unzip the sys_64_e500.7z under the GLU-CTC/application folder.
+```
+### Inference 
+```python
+Under the path of GLU-CTC/application: python inference_GRU_CTC.py
+```
+### Evaluation
+```python
+python evaluate_GRU_CTC.py
+```
+```python
+F-score:  0.4894166236448116  AUC: 0.5711581205061816  BLEU:  0.28028168048735863
+```
+### Training
+```python
+If you want to train the GLU-CTC yourself, 
+1) Unzip the Dataset.zip.001 ~ Dataset.zip.016 under the Full_dataset_of_Noiseme folder
+2) Copy the unzipped Dataset folder to the GLU-CTC/application
+3) python training_GRU_CTC.py
+```
+### Citation of CBGRU-GLU-CTC (GLU-CTC)
+
+```bibtex
+@INPROCEEDINGS{8683627,
+  author={Hou, Yuanbo and Kong, Qiuqiang and Li, Shengchen and Plumbley, Mark D.},
+  booktitle={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Sound Event Detection with Sequentially Labelled Data Based on Connectionist Temporal Classification and Unsupervised Clustering}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={46-50},
+  doi={10.1109/ICASSP.2019.8683627}}
+```
+
 
 ## GCT: Gated Contextual Transformer
 
@@ -36,20 +74,3 @@ Please feel free to use the sequential label dataset and consider citing our pap
   pages={1-5},
   doi={10.1109/ICASSP49357.2023.10096842}}
 ```
-
-## Related models
-### CBGRU-GLU-CTC (GLU-CTC)
-
-```bibtex
-@INPROCEEDINGS{8683627,
-  author={Hou, Yuanbo and Kong, Qiuqiang and Li, Shengchen and Plumbley, Mark D.},
-  booktitle={ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-  title={Sound Event Detection with Sequentially Labelled Data Based on Connectionist Temporal Classification and Unsupervised Clustering}, 
-  year={2019},
-  volume={},
-  number={},
-  pages={46-50},
-  doi={10.1109/ICASSP.2019.8683627}}
-```
-
-
