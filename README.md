@@ -64,10 +64,31 @@ If you want to train the GLU-CTC yourself,
   doi={10.1109/ICASSP.2019.8683627}}
 ```
 
+## Transformer
+```python
+Unzip the sys_b64_e500.7z under the Transformer/application folder.
+```
+
+### 1.1 Inference and Evaluation
+```python
+python evaluate_transformer.py
+```
+```python 
+BLEU:  0.3311125194951529
+F-score:  0.46405228758169936  AUC: 0.5896154049693271
+```
+
+### 1.2 Training
+```python
+If you want to train the Transformer yourself, 
+1) Unzip the Dataset.7z.001 ~ Dataset.7z.046 under the application folder
+2) python Train_transformer.py
+```
+
 
 ## GCT: Gated Contextual Transformer
 
-## Transformer
+
 
 
 GCT is uploding...
