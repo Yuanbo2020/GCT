@@ -27,30 +27,30 @@ Please feel free to use the Noiseme dataset, the sequential labels of DCASE and 
 
 ## 1. CBGRU-GLU-CTC (named GLU-CTC)
 
-### 1.1 Data preparation
+##### 1.1 Data preparation
 
 ```python
 Unzip the sys_64_e500.7z under the GLU-CTC/application folder.
 ```
-### 1.2 Inference 
+##### 1.2 Inference 
 ```python
 Under the path of GLU-CTC/application: python inference_GRU_CTC.py
 ```
-### 1.3 Evaluation
+##### 1.3 Evaluation
 ```python
 python evaluate_GRU_CTC.py
 ```
 ```python
 F-score:  0.4894166236448116  AUC: 0.5711581205061816  BLEU:  0.28028168048735863
 ```
-### 1.4 Training
+##### 1.4 Training
 ```python
 If you want to train the GLU-CTC yourself, 
 1) Unzip the Dataset.zip.001 ~ Dataset.zip.016 under the Full_dataset_of_Noiseme folder
 2) Copy the unzipped Dataset folder to the GLU-CTC/application
 3) python training_GRU_CTC.py
 ```
-### 1.5 Citation of CBGRU-GLU-CTC (GLU-CTC)
+##### 1.5 Citation of CBGRU-GLU-CTC (GLU-CTC)
 
 ```bibtex
 @INPROCEEDINGS{8683627,
@@ -69,7 +69,7 @@ If you want to train the GLU-CTC yourself,
 Unzip the sys_b64_e500.7z under the Transformer/application folder.
 ```
 
-### 1.1 Inference and Evaluation
+##### 1.1 Inference and Evaluation
 ```python
 python evaluate_transformer.py
 ```
@@ -78,7 +78,7 @@ BLEU:  0.3311125194951529
 F-score:  0.46405228758169936  AUC: 0.5896154049693271
 ```
 
-### 1.2 Training
+##### 1.2 Training
 ```python
 If you want to train the Transformer yourself, 
 1) Unzip the Dataset.7z.001 ~ Dataset.7z.046 under the application folder
