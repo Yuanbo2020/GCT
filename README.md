@@ -39,8 +39,7 @@ Under the path of GLU-CTC/application: python inference_GRU_CTC.py
 ##### 1.3 Evaluation
 ```python
 python evaluate_GRU_CTC.py
-```
-```python
+-------------------------------------------------------------
 F-score:  0.4894166236448116  AUC: 0.5711581205061816  BLEU:  0.28028168048735863
 ```
 ##### 1.4 Training
@@ -72,8 +71,7 @@ Unzip the sys_b64_e500.7z under the Transformer/application folder.
 ##### 1.1 Inference and Evaluation
 ```python
 python evaluate_transformer.py
-```
-```python 
+-------------------------------------------------------------
 BLEU:  0.3311125194951529
 F-score:  0.46405228758169936  AUC: 0.5896154049693271
 ```
