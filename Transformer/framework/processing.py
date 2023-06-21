@@ -315,8 +315,7 @@ def training_process(generator, model, models_dir, epochs, lr_init = 1e-3,
                 print('epoch: ', epoch, ' val_bleu: %.6f' % val_ave_bleu, ' seq_acc: %.6f' % val_sequential_acc)
 
             save_out_dict = {
-                             'state_dict': model.state_dict(),
-                             'optimizer': optimizer.state_dict()}
+                             'state_dict': model.state_dict()}
             save_out_path = os.path.join(models_dir, 'final_model' + config.endswith)
             torch.save(save_out_dict, save_out_path)
 
