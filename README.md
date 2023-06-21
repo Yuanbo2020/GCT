@@ -1,6 +1,6 @@
 # GCT: Gated Contextual Transformer for Sequential Audio Tagging
  
-# Noiseme dataset
+# Noiseme and DCASE2018 datasets
 
 Due to the privacy issues of the Noiseme dataset, we can only release the features and the manual annotations of the Noiseme dataset. The features and the corresponding manually annotated weak and sequential labels can be found <a href="https://github.com/Yuanbo2020/GCT/tree/main/Full_dataset_of_Noiseme" 
 target="https://github.com/Yuanbo2020/GCT/tree/main/Full_dataset_of_Noiseme">here</a>.
@@ -8,7 +8,7 @@ target="https://github.com/Yuanbo2020/GCT/tree/main/Full_dataset_of_Noiseme">her
 For the separate files of tagged sequential labels of DCASE and Noiseme datasets, please visit the <a href="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset" 
 target="https://github.com/Yuanbo2020/GCT/tree/main/Sequential_label_dataset">Sequential_label_dataset</a>.
 
-Please feel free to use the Noiseme dataset, the sequential labels of DCASE and Noiseme datasets, and consider citing our paper as
+Please feel free to use the Noiseme dataset, the sequential labels of DCASE and Noiseme datasets and the source code below, and consider citing our paper as
 
 ```bibtex
 @INPROCEEDINGS{10096842,
@@ -25,7 +25,50 @@ Please feel free to use the Noiseme dataset, the sequential labels of DCASE and 
 
 # Training, inference and evaluation
 
-## 1. CBGRU-GLU-CTC (named GLU-CTC)
+## 1) GCT: Gated Contextual Transformer
+
+### GCT on the DCASE2018 dataset
+
+```python
+Unzip the sys_b64_e500.7z under the GCT_DCASE2018/application folder.
+```
+
+##### 1.1 Inference and Evaluation on the DCASE2018 dataset
+```python
+python evaluate_GCT.py
+-------------------------------------------------------------
+BLEU:  0.6912116148965892
+F-score:  0.927536231884058  AUC: 0.9451526007572187
+```
+##### 1.2 Training
+```python
+If you want to train the GCT on the DCASE2018 dataset yourself, 
+1) Unzip the Dataset.7z.001 ~ Dataset.7z.031 under the application folder
+2) python train_GCT.py
+```
+
+### GCT on the Noiseme dataset
+
+```python
+Unzip the sys_b64_e500.7z under the GCT_Noiseme/application folder.
+```
+
+##### 1.1 Inference and Evaluation on the DCASE2018 dataset
+```python
+python evaluate_GCT.py
+-------------------------------------------------------------
+BLEU:  0.3524526737686447
+F-score:  0.5287138111058377  AUC: 0.6622533958429383
+```
+##### 1.2 Training
+```python
+If you want to train the GCT on the Noiseme dataset yourself, 
+1) Unzip the Dataset.7z.001 ~ Dataset.7z.046 under the application folder
+2) python Train_GCT.py
+```
+
+
+## 2) CBGRU-GLU-CTC (named GLU-CTC)
 
 ##### 1.1 Data preparation
 
@@ -63,7 +106,7 @@ If you want to train the GLU-CTC yourself,
   doi={10.1109/ICASSP.2019.8683627}}
 ```
 
-## Transformer
+## 3) Transformer
 ```python
 Unzip the sys_b64_e500.7z under the Transformer/application folder.
 ```
@@ -83,7 +126,7 @@ If you want to train the Transformer yourself,
 2) python Train_transformer.py
 ```
 
-## cTransformer (Contextual Transformer)
+## 4) cTransformer (Contextual Transformer)
 ```python
 copy Dataset.7z.001 ~ Dataset.7z.046 from Transformer/application to cTransformer/application 
 ```
@@ -107,12 +150,4 @@ If you want to train the cTransformer yourself,
   doi={10.21437/Interspeech.2022-196}
 }
 ```
-
-
-## GCT: Gated Contextual Transformer
-
-
-
-
-GCT is uploding...
  
