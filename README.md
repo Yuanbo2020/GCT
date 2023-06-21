@@ -85,6 +85,31 @@ If you want to train the Transformer yourself,
 2) python Train_transformer.py
 ```
 
+## cTransformer (Contextual Transformer)
+```python
+copy Dataset.7z.001 ~ Dataset.7z.046 from Transformer/application to cTransformer/application 
+```
+
+##### 1.1 Training
+```python
+If you want to train the cTransformer yourself, 
+1) Unzip the Dataset.7z.001 ~ Dataset.7z.046 under the application folder
+2) python Contextual_Transformer.py
+```
+
+##### 1.2 Citation of cTransformer (Contextual Transformer)
+
+```bibtex
+@inproceedings{hou22_interspeech,
+  author={Yuanbo Hou and Zhaoyi Liu and Bo Kang and Yun Wang and Dick Botteldooren},
+  title={{CT-SAT: Contextual Transformer for Sequential Audio Tagging}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={4147--4151},
+  doi={10.21437/Interspeech.2022-196}
+}
+```
+
 
 ## GCT: Gated Contextual Transformer
 
